@@ -19,11 +19,11 @@ variable "ec2_runner_instance_type" {
 variable "ec2_runner_security_group_id" {
   description = "Security group ID for EC2 runners"
   type = list(string)
-  default = ["sg-00a4f26b7903c056a"]
+  default = ["sg-xxxxxxxxxxx"]
 }
 
 variable "vpc_subnet_id" {
   description = "Subnet IDs for EC2 runners"
   type = list(string)
-  default = ["subnet-0d3994719054640c3"]
+  default = ["subnet-xxxxxxxxxxxx"]
 }
