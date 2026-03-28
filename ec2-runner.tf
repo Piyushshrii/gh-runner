@@ -6,7 +6,7 @@ data "aws_ami" "latest" {
 
   filter {
     name   = "name"
-    values = ["scdt-gh-runner-2204*"]
+    values = ["gh-runner-2204*"]
   }
 
   filter {
@@ -65,7 +65,7 @@ resource "aws_autoscaling_group" "runner_asg" {
 
   tag {
     key                 = "Name"
-    value               = "scdt-runner"
+    value               = "runner"
     propagate_at_launch = true
   }
 }
